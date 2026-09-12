@@ -35,7 +35,7 @@ ai-pdf-summarizer/
 ├── src/
 │   ├── ai_agent.py    # Anbindung an Groq-LLM & Prompt-Design
 │   └── pdf_reader.py  # PDF-Parsing & String-Konvertierung
-├── .env               # Lokale Umgebungsvariablen (wird nicht hochgeladen)
+├── .env.example       # Vorlage für Umgebungsvariablen
 ├── .gitignore         # Schützt sensible Daten vor Git-Tracking
 ├── main.py            # Startpunkt & GUI-Ablaufsteuerung
 ├── requirements.txt   # Projekt-Abhängigkeiten
@@ -50,7 +50,7 @@ Folge diesen Schritten im Terminal, um das Projekt lokal auszuführen:
 
 **1. Repository klonen:**
 ```bash
-git clone https://github.com/EnverAktuerk945/ai-pdf-summarizer.git
+git clone [https://github.com/EnverAktuerk945/ai-pdf-summarizer.git](https://github.com/EnverAktuerk945/ai-pdf-summarizer.git)
 cd ai-pdf-summarizer
 ```
 
@@ -65,11 +65,12 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-**4. API-Schlüssel hinterlegen:**
-Erstelle eine `.env`-Datei direkt im Hauptordner:
-```text
-GROQ_API_KEY=dein_persoenlicher_groq_api_key
+**4. API-Schlüssel konfigurieren:**
+Kopiere die Vorlage und trage deinen Groq-API-Key ein:
+```bash
+cp .env.example .env
 ```
+*(Trage danach deinen Key in die neu erstellte `.env`-Datei ein)*
 
 **5. Programm starten:**
 Lege eine beliebige PDF-Datei in den `data/`-Ordner und starte das Skript:

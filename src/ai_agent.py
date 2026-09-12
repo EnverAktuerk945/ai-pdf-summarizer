@@ -16,6 +16,3 @@ def summarize_text(text):
         max_tokens=150,
     )
     return chat_completion.choices[0].message.content
-
-ergebnis = summarize_text("Python ist eine Programmiersprache fuer Webentwicklung und KI.")
-print("Ergebnis ist:", ergebnis)

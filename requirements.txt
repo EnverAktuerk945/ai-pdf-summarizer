@@ -1,3 +1,2 @@
-pypdf
-groq
-python-dotenv
+certifi==2026.7.22
+pypdf==6.18.1

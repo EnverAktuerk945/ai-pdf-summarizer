@@ -8,27 +8,28 @@ Im Gegensatz zu Web-Apps läuft dieses Projekt zu 100 % in reinem Python und nut
 
 ## ✨ Features
 
-- Native Desktop-Dialoge (GUI): Kein Terminal-Gefummel beim Start – ein schlankes Pop-up-Fenster listet alle verfügbaren PDFs im Ordner auf und lässt dich bequem per Eingabe der Ziffer wählen.
-- Automatisches Dokumenten-Parsing: Schnelle Extraktion von Plain-Text aus mehrseitigen PDFs mittels pypdf.
-- High-Speed KI-Inferenz: Direkte Anbindung an die Groq-Cloud-API für Zusammenfassungen in Sekundenschnelle.
-- Ergebnis-Präsentation: Die finale Zusammenfassung ploppt direkt in einem sauberen Infofenster auf.
-- Saubere Architektur (Separation of Concerns): Strikte Trennung von Textextraktion (src/pdf_reader.py), KI-Logik (src/ai_agent.py) und Orchestrierung (main.py).
-- Sicherheitsstandard: Schutz sensibler API-Keys über .env und .gitignore.
+* **Native Desktop-Dialoge (GUI):** Schlankes Pop-up-Fenster zur bequemen Auswahl der PDF per Zifferneingabe.
+* **Automatisches Dokumenten-Parsing:** Schnelle Extraktion von Plain-Text aus mehrseitigen PDFs mittels `pypdf`.
+* **High-Speed KI-Inferenz:** Direkte Anbindung an die Groq-Cloud-API für Zusammenfassungen in Sekundenschnelle.
+* **Ergebnis-Präsentation:** Die finale Zusammenfassung ploppt direkt in einem sauberen Infofenster auf.
+* **Saubere Architektur:** Strikte Trennung von Textextraktion (`src/pdf_reader.py`), KI-Logik (`src/ai_agent.py`) und Orchestrierung (`main.py`).
+* **Sicherheitsstandard:** Schutz sensibler API-Keys über `.env` und `.gitignore`.
 
 ---
 
 ## 🛠️ Tech Stack
 
-- Sprache: Python 3
-- GUI: tkinter (Natives Desktop-Toolkit)
-- PDF Engine: pypdf
-- LLM / API: groq (Llama 3.3)
-- Environment Management: python-dotenv
+* **Sprache:** Python 3
+* **GUI:** `tkinter` (Natives Desktop-Toolkit)
+* **PDF Engine:** `pypdf`
+* **LLM / API:** `groq` (Llama 3.3)
+* **Environment Management:** `python-dotenv`
 
 ---
 
 ## 📁 Projektstruktur
 
+```text
 ai-pdf-summarizer/
 ├── data/              # Lokaler Speicherort für PDFs (z. B. Test.pdf)
 ├── src/
@@ -39,30 +40,39 @@ ai-pdf-summarizer/
 ├── main.py            # Startpunkt & GUI-Ablaufsteuerung
 ├── requirements.txt   # Projekt-Abhängigkeiten
 └── README.md          # Projektdokumentation
+```
 
 ---
 
 ## 🚀 Schnelleinrichtung & Start (Schritt-für-Schritt)
 
-Folge einfach diesen Schritten im Terminal, um das Projekt lokal auf deinem Rechner zu starten:
+Folge diesen Schritten im Terminal, um das Projekt lokal auszuführen:
 
-1. Repository auf deinen Rechner herunterladen:
+**1. Repository klonen:**
+```bash
 git clone https://github.com/EnverAktuerk945/ai-pdf-summarizer.git
 cd ai-pdf-summarizer
+```
 
-2. Eigene virtuelle Python-Umgebung erstellen und aktivieren:
+**2. Eigene virtuelle Python-Umgebung erstellen und aktivieren:**
+```bash
 python3 -m venv .venv
 source .venv/bin/activate
+```
 
-3. Benötigte Bibliotheken mit einem Befehl installieren:
+**3. Benötigte Bibliotheken installieren:**
+```bash
 pip install -r requirements.txt
+```
 
-4. API-Schlüssel hinterlegen:
-Erstelle eine Textdatei mit dem genauen Namen .env direkt im Hauptordner und trage deinen Groq-Key ein:
+**4. API-Schlüssel hinterlegen:**
+Erstelle eine `.env`-Datei direkt im Hauptordner:
+```text
 GROQ_API_KEY=dein_persoenlicher_groq_api_key
+```
 
-5. Programm starten:
-Lege eine beliebige PDF-Datei in den data/ Ordner und starte das Skript:
+**5. Programm starten:**
+Lege eine beliebige PDF-Datei in den `data/`-Ordner und starte das Skript:
+```bash
 python3 main.py
-
-Es öffnet sich sofort ein kleines Dialogfenster auf deinem Desktop, in dem du die gewünschte PDF auswählen kannst. Die KI generiert anschließend die Zusammenfassung und zeigt sie in einem Info-Fenster an.
+```

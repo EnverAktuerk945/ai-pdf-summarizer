@@ -1,6 +1,6 @@
 # 📄 AI PDF Summarizer (Native Python & Desktop GUI)
 
-Ein leichtgewichtiges, modulares Python-Tool, das mehrseitige PDF-Dokumente automatisiert analysiert und über modernste KI (Llama 3.3 via Groq) präzise zusammenfasst. 
+Ein leichtgewichtiges, modulares Python-Tool, das mehrseitige PDF-Dokumente automatisiert analysiert und über modernste KI (Qwen 3.8 / Groq LLM) präzise zusammenfasst. 
 
 Im Gegensatz zu Web-Apps läuft dieses Projekt zu 100 % in reinem Python und nutzt native OS-Fenster (Tkinter) für eine intuitive Bedienung ohne Browser.
 

@@ -22,7 +22,7 @@ Im Gegensatz zu Web-Apps läuft dieses Projekt zu 100 % in reinem Python und nut
 * **Sprache:** Python 3
 * **GUI:** `tkinter` (Natives Desktop-Toolkit)
 * **PDF Engine:** `pypdf`
-* **LLM / API:** `groq` (Llama 3.3)
+* **LLM / API:** `groq` (Qwen 3.8 / Groq LLM)
 * **Environment Management:** `python-dotenv`
 
 ---
